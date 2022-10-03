@@ -1,3 +1,4 @@
+/* COMP229 Assignment 1 | style.css | Andreas Themistocles | 301251197 | October 3rd, 2022*/
 /* Body styling */
 
 body {
@@ -171,11 +172,11 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 249, 236);
+  color: rgb(0, 162, 255);
 }
 
 a:active {
-  color: rgb(255, 249, 236);
+  color: rgb(255, 174, 0);
 }
 
 /* Main content styling*/
