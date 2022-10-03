@@ -1,0 +1,325 @@
+/* Body styling */
+
+body {
+  background-color: rgba(55, 139, 139, 0.74);
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header Image Styling */
+
+div.header-image-div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+img.header-image {
+  width: 10%;
+  height: auto;
+}
+
+/* Nav styling */
+
+div.nav-main-div {
+  position: relative;
+  background-color: white;
+  width: 60%;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  display: table;
+}
+
+#nav-home-border {
+  width: 20%;
+  float: left;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#nav-contact-border {
+  width: 20%;
+  float: left;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#nav-projects-border {
+  width: 20%;
+  float: left;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#nav-services-border {
+  width: 20%;
+  float: left;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#nav-about-border {
+  width: 20%;
+  float: left;
+  display: table-cell;
+  vertical-align: center;
+}
+
+#nav-home {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#nav-contact {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#nav-projects {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#nav-services {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#nav-about {
+  text-align: center;
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#nav-home:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+#nav-contact:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+#nav-projects:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+#nav-services:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+#nav-about:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+a.nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  size: 16px;
+  line-height-step: 2;
+}
+
+a.nav-link-active {
+  color: black;
+}
+
+/* Link styling */
+
+a {
+  color: rgb(214, 146, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 249, 236);
+}
+
+a:active {
+  color: rgb(255, 249, 236);
+}
+
+/* Main content styling*/
+
+div.main-content-div {
+  position: relative;
+  background-color: white;
+  width: 60%;
+  height: max-content;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+div.main-content-title {
+  text-align: center;
+}
+
+/* Home page styling */
+
+div.home-content {
+  text-align: center;
+}
+
+/* About page styling */
+
+div.about-personal-info-div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img.about-self-photo {
+  width: 30%;
+  height: auto;
+  border-radius: 20px;
+}
+
+div.about-description-div {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.about-resume-div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Services page styling */
+
+h3.services-service-title {
+  text-align: center;
+}
+
+div.services-description-div {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Projects page styling */
+
+h3.projects-title {
+  text-align: center;
+}
+
+h3.projects-project-title {
+  text-align: center;
+}
+
+div.projects-sample {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.projects-description-div {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img.projects-sample-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+div.projects-project-link {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a.projects-sample-link {
+  text-align: center;
+}
+
+/* Contact page styling */
+
+input {
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+div.contact-information {
+  margin: 20px;
+}
+
+div.contact-form {
+  margin: 20px;
+}
+
+div.contact-submit-div {
+  margin-top: 20px;
+}
+
+/* Footer styling */

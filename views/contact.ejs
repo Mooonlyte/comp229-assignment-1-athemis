@@ -1,0 +1,69 @@
+<!-- Andreas Themistocles | 301251197 -->
+<!-- Header Section -->
+
+<%- include ('partials/header.ejs') %>
+
+<!-- Header Image Section -->
+
+<%- include ('partials/header_image.ejs') %>
+
+<!-- Navigation Section -->
+
+<%- include ('partials/nav_main.ejs') %>
+
+<!-- Title Section -->
+
+<!-- Main Content Section-->
+
+<main>
+    <div class="main-content-div">
+
+      <div class="main-content-title">
+        <h1><%= title %></h1>
+      </div>
+      <div class="main-content">
+        <div class="contact-content">
+            <div class="contact-information">
+                <p><b>Email:</b> andreasthemistocles@hotmail.com</p>
+            </div>
+            <div class="contact-form">
+                <form action="/" method="post">
+                    <div class="contact-first-name-input">
+                        <p>First Name</p>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="contact-last-name-input">
+                        <p>Last Name</p>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div class="contact-phone-input">
+                        <p>Phone Number</p>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="contact-email-input">
+                        <p>Email</p>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="contact-message-input">
+                        <p>Message</p>
+                        <textarea name="message" id="message" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="contact-submit-div">
+                        <input class="contact-submit-button" type="submit" name="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+
+<%- include ('partials/footer.ejs') %>
+
+<!-- Script Section -->
+
+<%- include ('partials/closing.ejs') %>
+
+
