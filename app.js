@@ -1,3 +1,4 @@
+// COMP229 Assignment 1 | app.js | Andreas Themistocles | 301251197 | October 3rd, 2022
 // install packages
 let createError = require('http-errors');
 let express = require('express');

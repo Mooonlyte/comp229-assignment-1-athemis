@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// COMP229 Assignment 1 | server.js | Andreas Themistocles | 301251197 | October 3rd, 2022
+
 /**
  * Module dependencies.
  */

@@ -1,3 +1,4 @@
+// COMP229 Assignment 1 | users.js | Andreas Themistocles | 301251197 | October 3rd, 2022
 var express = require('express');
 var router = express.Router();
 
