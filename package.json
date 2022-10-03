@@ -1,9 +1,13 @@
 {
   "name": "comp229assignment1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^16.15.0",
+    "npm": "^8.5.5"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +16,18 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "Assignment 1 for COMP229",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mooonlyte/comp229-assignment-1-athemis.git"
+  },
+  "author": "Andreas Themistocles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mooonlyte/comp229-assignment-1-athemis/issues"
+  },
+  "homepage": "https://github.com/Mooonlyte/comp229-assignment-1-athemis#readme"
 }
