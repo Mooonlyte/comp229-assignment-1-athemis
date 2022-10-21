@@ -1,0 +1,93 @@
+<!-- COMP229 Assignment 2 | views/contacts/display_contacts.ejs | Andreas Themistocles | 301251197 | October 20th, 2022 -->
+<!-- Header Section -->
+
+<%- include ('../partials/header.ejs') %>
+
+<!-- Header Image Section -->
+
+<%- include ('../partials/header_image.ejs') %>
+
+<!-- Navigation Section -->
+
+<%- include ('../partials/nav_main.ejs') %>
+
+<!-- Title Section -->
+
+<!-- Main Content Section-->
+
+<main>
+    <div class="main-content-div">
+
+        <div class="main-content-title">
+            <h1><%= title %></h1>
+        </div>
+        <div class="main-content">
+            <div id="add-button-border">
+                <% if(typeof displayName == 'string' && displayName) { %> 
+                    <a href="/contacts/add" class="add-button-link" role="button">
+                        <div class="add-button-div" id="add-button">
+                            <p>Add Contact</p>
+                        </div>
+                    </a>
+                <% } %>
+            </div>
+
+            <div class="table-content">
+                <table class="table-contacts">
+                    <!-- Header Row -->
+                    <tr>
+                        <th class="table-contacts-header">First Name</th>
+                        <th class="table-contacts-header">Last Name</th>
+                        <th class="table-contacts-header">Phone</th>
+                        <th class="table-contacts-header">Email</th>
+                        <% if(typeof displayName == 'string' && displayName) { %> 
+                            <th class="table-contacts-header"></th>
+                            <th class="table-contacts-header"></th>
+                        <% } %>
+                    </tr>
+
+                    <!-- Body Row -->
+
+                    <% for(let count = 0; count < contactList.length; count++) { %>
+                        <tr>
+                            <td class="table-contacts-row"><%= contactList[count].firstName %></td>
+                            <td class="table-contacts-row"><%= contactList[count].lastName %></td>
+                            <td class="table-contacts-row"><%= contactList[count].phone %></td>
+                            <td class="table-contacts-row"><%= contactList[count].email %></td>
+                            <% if(typeof displayName == 'string' && displayName) { %> 
+                                <td class="table-contacts-row">
+                                    <div id="edit-button-border">
+                                        <a href="/contacts/edit/<%= contactList[count]._id %>" class="edit-button-link" role="button">
+                                            <div class="edit-button-div" id="edit-button">
+                                                <p>Edit Contact</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="table-contacts-row">
+                                    <div id="delete-button-border">
+                                        <a href="/contacts/delete/<%= contactList[count]._id %>" class="delete-button-link" role="button">
+                                            <div class="delete-button-div" id="delete-button">
+                                                <p>Delete Contact</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            <% } %>
+                        </tr>
+                    <% } %>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+
+<%- include ('../partials/footer.ejs') %>
+
+<!-- Script Section -->
+
+<%- include ('../partials/closing.ejs') %>
+

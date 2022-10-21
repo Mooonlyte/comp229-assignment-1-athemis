@@ -1,4 +1,3 @@
-<!-- COMP229 Assignment 1 | nav_main.ejs | Andreas Themistocles | 301251197 | October 3rd, 2022 -->
 <div class="nav-main-div">
 
   <div id="nav-home-border">
@@ -40,5 +39,39 @@
       </div>
     </a>
   </div>
+
+  <div id="nav-contact-border">
+    <a href="/contacts" class="nav-link">
+      <div class="nav-button-div" id="nav-contact">
+        <p>Contact List</p>
+      </div>
+    </a>
+  </div>
+  
+  <div id="nav-contact-border">
+    <% if(typeof displayName == 'string' && displayName) { %> 
+      <a href="/logout" class="nav-link">
+        <div class="nav-button-div" id="nav-contact">
+          <p>Logout</p>
+        </div>
+      </a>
+    <% } else { %>
+      <a href="/login" class="nav-link">
+        <div class="nav-button-div" id="nav-contact">
+          <p>Login</p>
+        </div>
+      </a>
+    <% } %>
+
+  </div>
+
+  <div id="nav-contact-border">
+    <% if(typeof displayName == 'string' && displayName) { %> 
+      <p>Logged in as: <%= displayName %></p>
+    <% } else { %>
+      <p></p>
+    <% } %>
+  </div>
+
 
 </div>

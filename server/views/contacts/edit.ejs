@@ -1,0 +1,91 @@
+<!-- COMP229 Assignment 2 | views/contacts/edit.ejs | Andreas Themistocles | 301251197 | October 20th, 2022 -->
+<!-- Header Section -->
+
+<%- include ('../partials/header.ejs') %>
+
+<!-- Header Image Section -->
+
+<%- include ('../partials/header_image.ejs') %>
+
+<!-- Navigation Section -->
+
+<%- include ('../partials/nav_main.ejs') %>
+
+<!-- Title Section -->
+
+<!-- Main Content Section-->
+
+<main>
+    <div class="main-content-div">
+
+        <div class="main-content-title">
+            <h1><%= title %></h1>
+        </div>
+        <div class="main-content">
+            <div class="add-contact-form">
+                <form method="post" autocomplete="off">
+                    <div class="add-first-name-input">
+                        <p>First Name</p>
+                        <input 
+                        type="text" 
+                        name="firstName" 
+                        id="firstName"
+                        placeholder="Enter name"
+                        value="<%= contact.firstName %>"
+                        required>
+                    </div>
+                    <div class="add-last-name-input">
+                        <p>Last Name</p>
+                        <input 
+                        type="text" 
+                        name="lastName" 
+                        id="lastName"
+                        placeholder="Enter name" 
+                        value="<%= contact.lastName %>"
+                        required>
+                    </div>
+                    <div class="add-phone-input">
+                        <p>Phone Number</p>
+                        <input 
+                        type="text" 
+                        name="phone" 
+                        id="phone" 
+                        placeholder="Enter number"
+                        value="<%= contact.phone %>"
+                        required>
+                    </div>
+                    <div class="add-email-input">
+                        <p>Email</p>
+                        <input 
+                        type="text" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Enter email"
+                        value="<%= contact.email %>"
+                        required>
+                    </div>
+                    <div class="add-contact-submit-div">
+                        <input class="contact-submit-button" type="submit" name="submit" id="submit" value="Submit">
+                    </div>
+                    <div class="cancel-contact-div">
+                        <a href="/contacts" class="cancel-button-link" role="button">
+                            <div class="cancel-button-shape" id="cancel-button">
+                                <p>Cancel</p>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+
+<%- include ('../partials/footer.ejs') %>
+
+<!-- Script Section -->
+
+<%- include ('../partials/closing.ejs') %>
+

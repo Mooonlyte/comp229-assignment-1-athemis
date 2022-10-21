@@ -1,4 +1,4 @@
-<!-- COMP229 Assignment 1 | index.ejs | Andreas Themistocles | 301251197 | October 3rd, 2022 -->
+<!-- COMP229 Assignment 2 | views/error.ejs | Andreas Themistocles | 301251197 | October 20th, 2022 -->
 <!-- Header Section -->
 
 <%- include ('partials/header.ejs') %>
@@ -22,11 +22,10 @@
             <h1><%= title %></h1>
         </div>
         <div class="main-content">
-            <div class="home-content">
-                <p>Welcome!</p>
-                <h3>Mission Statement</h3>
-                <p>I will code for food &#x1F607;</p>
-                <a href="/about">About Me</a>
+            <div class="error-content">
+                <h1><%= message %></h1>
+                <h2><%= error.status %></h2>
+                <!--<pre><%= error.stack %></pre>-->
             </div>
         </div>
     </div>
@@ -36,8 +35,7 @@
 
 <%- include ('partials/footer.ejs') %>
 
-<!-- Script & Closing Tags Section -->
+<!-- Script Section -->
 
 <%- include ('partials/closing.ejs') %>
-
 

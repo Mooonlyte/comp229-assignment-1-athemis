@@ -1,0 +1,75 @@
+<!-- COMP229 Assignment 2 | views/auth/login.ejs | Andreas Themistocles | 301251197 | October 20th, 2022 -->
+<!-- Header Section -->
+
+<%- include ('../partials/header.ejs') %>
+
+<!-- Header Image Section -->
+
+<%- include ('../partials/header_image.ejs') %>
+
+<!-- Navigation Section -->
+
+<%- include ('../partials/nav_main.ejs') %>
+
+<!-- Title Section -->
+
+<!-- Main Content Section-->
+
+<main>
+    <div class="main-content-div">
+
+        <div class="main-content-title">
+            <h1><%= title %></h1>
+        </div>
+        <div class="main-content">
+            <div class="login-message-div">
+                <% if(messages.length > 0) { %>
+                    <%= messages %>
+                <% } %>
+            </div>
+            <div class="login-form-div">
+                <h2>Login</h2>
+                <form method="post" autocomplete="off">
+                    <fieldset class="username-fieldset">
+                        <label for="username">Username: </label>
+                        <input type="text" 
+                        class="username-input"
+                        name="username"
+                        placeholder="Enter username"
+                        id="username" 
+                        required
+                        autofocus>
+                    </fieldset>
+        
+                    <fieldset class="password-fieldset">
+                        <label for="passowrd">Password: </label>
+                        <input type="password" 
+                        class="password-input"
+                        name="password"
+                        placeholder="Enter password"
+                        id="password" 
+                        required>
+                        or
+                        <a href="/register">Register Here</a>
+                    </fieldset>
+        
+                    <fieldset class="submit-fieldset">
+                        <input type="submit" class="login-submit-button" value="Login">
+                        <a href="/">
+                            <input type="button" class="login-cancel-button" value="Cancel">
+                        </a>            
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer Section -->
+
+<%- include ('../partials/footer.ejs') %>
+
+<!-- Script Section -->
+
+<%- include ('../partials/closing.ejs') %>
+

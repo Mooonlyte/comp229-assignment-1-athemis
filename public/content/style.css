@@ -1,4 +1,4 @@
-/* COMP229 Assignment 1 | style.css | Andreas Themistocles | 301251197 | October 3rd, 2022*/
+/* COMP229 Assignment 2 | style.css | Andreas Themistocles | 301251197 | October 20th 2022 */
 /* Body styling */
 
 body {
@@ -304,11 +304,11 @@ a.projects-sample-link {
 /* Contact page styling */
 
 input {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 textarea {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 div.contact-information {
@@ -324,3 +324,100 @@ div.contact-submit-div {
 }
 
 /* Footer styling */
+
+/* Contact List styling */
+#add-button {
+  text-align: center;
+  width: 20%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(85, 145, 185);
+  border-radius: 10px;
+  border: #000000;
+}
+
+#add-button:hover {
+  background-color: rgb(12, 106, 168);
+  color: rgb(255, 249, 236);
+}
+
+a.add-button-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  size: 16px;
+}
+
+div.table-content {
+  position: relative;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+ position: relative;
+ width: 100%;
+ height: auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+}
+
+th {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: rgb(96, 197, 255);
+  padding: 10px;
+}
+
+td {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Add/Edit Page styling */
+div.add-contact-form {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Login Page styling */
+div.login-message-div {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.login-form-div {
+  position: relative;
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border-style: none;
+}
